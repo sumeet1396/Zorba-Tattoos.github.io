@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zorba Tattoos</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Trade Winds' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/indexsheet.css" rel="stylesheet">
+</head>
+<body onload="init()">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="jquery-3.2.1.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/menu.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOebivMpB0sbtCPbwC-A_8FVp2WqYpwUo&callback=myMap"></script>
+  <div class="cover"></div>
+  <div class="text">
+      <h1>ZORBA</h1>
+      <h4>TATTOOS</h4>
+  </div>
+  <nav>
+  <div class="menu" id="nav">
+    <ul>
+      <li><a href="#home"><b>Home</b></a></li>
+      <li><a href="#artist"><b>Artist</b></a></li>
+      <li><a href="#tattoos"><b>Tattoos</b></a></li>
+      <li><a href="#piercing"><b>Piercing</b></a></li>
+      <li><a href="#contact"><b>Contact</b></a></li>
+    </ul>
+  </div>
+  </nav>
+
+  <div id="home">
+    <br><br><br>
+    <center><h2><b>Zorba Tattoos</b></h2></center>
+    <br><br>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-6 left">
+        <h4><b>WELCOME TO<br>ZORBA TATTOOS</b></h4>
+      </div>
+      <div class="col-md-6 right">
+        <p>Located in Virar(W) Maharashtra,
+           Zorba Tattoos provides a place where people can enjoy art and be
+           inspired to create their own personal style in body expression.
+		       We offer custom designed body art as well as a full range of professional piercing.<br>
+           All Hygiene & Standard equipment's are strictly Maintained for safety of both customer's & artist.
+           Check our website and Facebook page regularly to stay informed about upcoming art shows and events.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!-- Artist -->
+  <div class="parallax1" id="artist">
+    <br><br><br>
+    <center><h2><b>Artist</b></h2></center>
+    <br><br>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-3 left1">
+        <img class="art" src="img/artist2.jpg" width="300px" height="300px">
+      </div>
+      <div class="col-md-3 right1">
+        <h4><b>GAURAV</b></h4>
+        <p>Gaurav  started The Studio in 2013. Art is his favorite pass time on this earth.
+          He loves tattooing very colorful, organic images or text-heavy,
+          graphic images.  Birds, animals, flowers, trees, and old beat up antique items are among his favorites.
+          He also loves illustration and painting.  And will do custom tattoos or artwork.<br>
+          <b>"You think it i ink it".</b></p><br>
+          <a href="https://www.facebook.com/gaurf.marley.7"><img class="fb" src="img/fb.png" width="50px" height="50px"></a>
+          <a href="https://www.instagram.com/zorba_tattoo/?hl=en"><img class="in" src="img/in.png" width="50px" height="50px"></a>
+
+      </div>
+    </div>
+    </div>
+  </div>
+  <!-- tattoos -->
+  <div id="tattoos">
+    <br><br><br>
+    <center><h2><b>Tattoos</b></h2></center>
+    <br><br>
+    <div class="container">
+    <div class="row1">
+      <div class="column">
+        <img src="img/slider1.jpg" onclick="openModal();currentSlide(1)" style="width:100%">
+        <img src="img/slider5.jpg" onclick="openModal();currentSlide(2)" style="width:100%">
+        <img src="img/w8.jpg" onclick="openModal();currentSlide(3)" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img/slider6.jpg" onclick="openModal();currentSlide(4)" style="width:100%">
+        <img src="img/w2.jpg" onclick="openModal();currentSlide(5)" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img/slider2.jpg" onclick="openModal();currentSlide(6)" style="width:100%">
+        <img src="img/w1.jpg" onclick="openModal();currentSlide(7)" style="width:100%">
+        <img src="img/w9.jpg" onclick="openModal();currentSlide(8)" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img/slider9.jpg" onclick="openModal();currentSlide(9)" style="width:100%">
+        <img src="img/slider7.jpg" onclick="openModal();currentSlide(10)" style="width:100%">
+      </div>
+    </div>
+    <br>
+    <center><h6 class="more"><a href="pages/tattoos.html">See More <span class="glyphicon glyphicon-chevron-right"></span></a></h6></center>
+
+    <!-- slider open -->
+
+<div id="myModal" class="modal">
+<span class="close cursor" onclick="closeModal()">&times;</span>
+<div class="modal-content">
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 10</div>
+    <img src="img/slider1.jpg" style="width:100%; height:500px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 10</div>
+    <img src="img/slider5.jpg" style="width:100%; height:500px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 10</div>
+    <img src="img/w8.jpg" style="width:100%; height:500px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 10</div>
+    <img src="img/slider6.jpg" style="width:100%; height:500px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 10</div>
+    <img src="img/w2.jpg" style="width:100%; height:500px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="img/slider2.jpg" style="width:100%; height:500px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 10</div>
+    <img src="img/w1.jpg" style="width:100%; height:500px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 10</div>
+    <img src="img/w9.jpg" style="width:100%; height:500px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">9 / 10</div>
+    <img src="img/slider9.jpg" style="width:100%; height:500px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">10 / 10</div>
+    <img src="img/slider7.jpg" style="width:100%; height:500px;">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+</div>
+    <!-- slider closed -->
+    </div>
+    </div>
+  </div>
+
+  <div class="parallax2" id="piercing">
+    <div class="container">
+    <br><br><br>
+    <center><h2><b>Piercing</b></h2><br><br><br>
+    <p>The art of body piercing has grown to include more and more unique piercing placements and designs.<br>
+      There are now dozens of piercing styles used on the face, chest, back and other parts of the body.<br>
+      We at Zobra can provide you with all types of Body Piercing</p><br><br><br>
+      <img src="img/piercing.png" width="100px" height="100px">
+    </center>
+    <br><br>
+    </div>
+  </div>
+
+  <div id="contact">
+    <div class="container">
+    <br><br><br>
+    <center><h2><b>Contact us</b></h2></center>
+    <br><br>
+    <div class="row">
+      <div class="col-md-6 left2">
+        <center>
+          <h4>Address</h4><br><br>
+          <p>Shop n.o-1, Jivdani Ashirwad Building, Jain Mandir Road,<br> Nearby Virar railway station, Virar (west)
+             Virar<br>+91 077386 82979</p><br>
+             <a href="https://www.facebook.com/ZORBA-TATTOO-1441323666191245/"><img src="img/fb-1.png" width="40px" height="40px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <a href="https://www.instagram.com/zorba_tattoo/?hl=en"><img src="img/in-1.png" width="40px" height="40px"></a>
+        </center>
+      </div>
+      <div class="col-md-6 right2">
+        <center>
+          <h4>Opening Hours</h4><br><br>
+          <h6>Monday Closed</h6>
+					<h6>Tuesday-Sunday 8am to 11pm</h6>
+        </center>
+      </div>
+    </div>
+    </div>
+    <!-- map --><br><br><br>
+    <div class="container-fluid">
+    <div id="map">
+
+    </div>
+    </div>
+  </div>
+</body>
+</html>

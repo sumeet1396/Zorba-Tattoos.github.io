@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zorba Tattoos</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/animate.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Trade Winds' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../css/tattoosheet.css" rel="stylesheet">
+</head>
+<body onload="init()">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../jquery-3.2.1.js"></script>
+  <script src="../js/slider.js"></script>
+  <script src="../js/map.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOebivMpB0sbtCPbwC-A_8FVp2WqYpwUo&callback=myMap"></script>
+  <div class="cover"></div>
+  <div class="back"><h3><a href="../index.html"><b><span class="glyphicon glyphicon-chevron-left"></span> Back</b></a></h3></div>
+
+  <div class="title">
+    <h2>ZORBA</h2>
+    <h4>TATTOOS</h4>
+  </div>
+  <div class="area">
+  <br><br><br>
+  <center><h1><b>GALLERY</b></h1></center><br><br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+      <div class="left">
+        <h5><b>Pricing</b></h5>
+        <p>1500rs per hour<br>
+           1000rs to 1200rs single line tattoos</p>
+      </div><br><br><br>
+      <div class="pen"><!--
+        <img src="../img/machine.png" width="200px" height="200px"> -->
+      </div>
+      </div>
+      <div class="col-md-10 right">
+        <div class="row1">
+          <div class="column">
+            <img src="../img/slider1.jpg" onclick="openModal();currentSlide(1)" style="width:100%">
+            <img src="../img/slider5.jpg" onclick="openModal();currentSlide(2)" style="width:100%">
+            <img src="../img/w8.jpg" onclick="openModal();currentSlide(3)" style="width:100%">
+            <img src="../img/slider8.jpg" onclick="openModal();currentSlide(4)" style="width:100%">
+            <img src="../img/w17.jpg" onclick="openModal();currentSlide(5)" style="width:100%">
+            <img src="../img/w11.jpg" onclick="openModal();currentSlide(6)" style="width:100%">
+            <img src="../img/w21.jpg" onclick="openModal();currentSlide(7)" style="width:100%">
+            <img src="../img/w1.jpg" onclick="openModal();currentSlide(8)" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="../img/slider6.jpg" onclick="openModal();currentSlide(9)" style="width:100%">
+            <img src="../img/w2.jpg" onclick="openModal();currentSlide(10)" style="width:100%">
+            <img src="../img/w16.jpg" onclick="openModal();currentSlide(11)" style="width:100%">
+            <img src="../img/w30.jpg" onclick="openModal();currentSlide(12)" style="width:100%">
+            <img src="../img/w26.jpg" onclick="openModal();currentSlide(13)" style="width:100%">
+            <img src="../img/w22.jpg" onclick="openModal();currentSlide(14)" style="width:100%">
+            <img src="../img/w12.jpg" onclick="openModal();currentSlide(15)" style="width:100%">
+            <img src="../img/w10.jpg" onclick="openModal();currentSlide(16)" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="../img/slider2.jpg" onclick="openModal();currentSlide(17)" style="width:100%">
+            <img src="../img/w31.jpg" onclick="openModal();currentSlide(18)" style="width:100%">
+            <img src="../img/w9.jpg" onclick="openModal();currentSlide(19)" style="width:100%">
+            <img src="../img/w15.jpg" onclick="openModal();currentSlide(20)" style="width:100%">
+            <img src="../img/w33.jpg" onclick="openModal();currentSlide(21)" style="width:100%">
+            <img src="../img/w20.jpg" onclick="openModal();currentSlide(22)" style="width:100%">
+            <img src="../img/w23.jpg" onclick="openModal();currentSlide(23)" style="width:100%">
+            <img src="../img/w28.jpg" onclick="openModal();currentSlide(24)" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="../img/slider9.jpg" onclick="openModal();currentSlide(25)" style="width:100%">
+            <img src="../img/slider7.jpg" onclick="openModal();currentSlide(26)" style="width:100%">
+            <img src="../img/w27.jpg" onclick="openModal();currentSlide(27)" style="width:100%">
+            <img src="../img/w25.jpg" onclick="openModal();currentSlide(28)" style="width:100%">
+            <img src="../img/w14.jpg" onclick="openModal();currentSlide(29)" style="width:100%">
+            <img src="../img/w24.jpg" onclick="openModal();currentSlide(30)" style="width:100%">
+            <img src="../img/w19.jpg" onclick="openModal();currentSlide(31)" style="width:100%">
+            <img src="../img/w29.jpg" onclick="openModal();currentSlide(32)" style="width:100%">
+          </div>
+        </div>
+        <br>
+
+        <!-- slider open -->
+
+    <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 32</div>
+        <img src="../img/slider1.jpg" style="width:100%; height:500px;" >
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 32</div>
+        <img src="../img/slider5.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 32</div>
+        <img src="../img/w8.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 32</div>
+        <img src="../img/slider8.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 32</div>
+        <img src="../img/w17.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 32</div>
+        <img src="../img/w11.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 32</div>
+        <img src="../img/w21.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 32</div>
+        <img src="../img/w1.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">9 / 32</div>
+        <img src="../img/slider6.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">10 / 32</div>
+        <img src="../img/w2.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">11 / 32</div>
+        <img src="../img/w16.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">12 / 32</div>
+        <img src="../img/w30.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">13 / 32</div>
+        <img src="../img/w26.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">14 / 32</div>
+        <img src="../img/w22.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">15 / 32</div>
+        <img src="../img/w12.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">16 / 32</div>
+        <img src="../img/w10.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">17 / 32</div>
+        <img src="../img/slider2.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">18 / 32</div>
+        <img src="../img/w31.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">19 / 32</div>
+        <img src="../img/w9.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">20 / 32</div>
+        <img src="../img/w15.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">21 / 32</div>
+        <img src="../img/w33.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">22 / 32</div>
+        <img src="../img/w20.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">23 / 32</div>
+        <img src="../img/w23.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">24 / 32</div>
+        <img src="../img/w28.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">25 / 32</div>
+        <img src="../img/slider9.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">26 / 32</div>
+        <img src="../img/slider7.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">27 / 32</div>
+        <img src="../img/w27.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">28 / 32</div>
+        <img src="../img/w25.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">29 / 32</div>
+        <img src="../img/w14.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">30 / 32</div>
+        <img src="../img/w24.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">31 / 32</div>
+        <img src="../img/w19.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">32 / 32</div>
+        <img src="../img/w29.jpg" style="width:100%; height:500px;">
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    </div>
+    </div>
+        <!-- slider closed -->
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="contact">
+    <div class="container">
+    <br><br><br>
+    <center><h2><b>Contact us</b></h2></center>
+    <br><br>
+    <div class="row">
+      <div class="col-md-6 left2">
+        <center>
+          <h4>Address</h4><br><br>
+          <p>Shop n.o-1, Jivdani Ashirwad Building, Jain Mandir Road,<br> Nearby Virar railway station, Virar (west)
+             Virar<br>+91 077386 82979</p><br>
+             <a href="https://www.facebook.com/ZORBA-TATTOO-1441323666191245/"><img src="../img/fb-1.png" width="40px" height="40px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <a href="https://www.instagram.com/zorba_tattoo/?hl=en"><img src="../img/in-1.png" width="40px" height="40px"></a>
+        </center>
+      </div>
+      <div class="col-md-6 right2">
+        <center>
+          <h4>Opening Hours</h4><br><br>
+          <h6>Monday Closed</h6>
+					<h6>Tuesday-Sunday 8am to 11pm</h6>
+        </center>
+      </div>
+    </div>
+    </div>
+    <!-- map --><br><br><br>
+    <div id="map">
+    </div>
+
+    <div class="creator">
+      <center><p>Created by <b>Sumeet Rane</b></p></center>
+    </div>
+  </div>
+</body>
+</html>
